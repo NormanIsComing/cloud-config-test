@@ -10,7 +10,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   cas:
     #    是否开启cas单点登陆
-    casEnabled: false
+    casEnabled: true
     server-name: http://10.18.69.230
     #    前端主页面
     front-index: http://10.18.69.230
