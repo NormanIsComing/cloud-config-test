@@ -1,0 +1,34 @@
+server:
+  servlet.context-path: /be
+spring:
+  application:
+    name: process_manual
+  datasource:
+    url: jdbc:mysql://10.18.69.231:3306/process_dev
+    username: process_dev
+    password: Azxs1234##
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cas:
+    #    是否开启cas单点登陆
+    casEnabled: false
+    server-name: http://10.18.69.230
+    #    前端主页面
+    front-index: http://10.18.69.230
+    cas-server-url-prefix: https://signinuat.mideazy.com
+    cas-server-login-url: https://signinuat.mideazy.com/login
+  ldap:
+    urls: ldap://10.16.24.221:1389
+    username: cn=Directory Manager
+    password: Abcd1234
+    base: dc=bizenit,dc=com
+  redis:
+    host: 10.18.69.233
+    password: 6jtNn3urW
+    port: 6379
+    timeout: 6000
+  session:
+    store-type: redis
+    redis.namespace: process_manual
+mybatis.mapper-locations: classpath:com/midea/dc/*.xml
+pagehelper.reasonable: true
+
