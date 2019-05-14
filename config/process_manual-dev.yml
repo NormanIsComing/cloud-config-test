@@ -11,9 +11,9 @@ spring:
   cas:
     #    是否开启cas单点登陆
     casEnabled: true
-    server-name: http://10.73.155.43:8086
+    server-name: http://10.73.154.32:8082
     #    前端主页面
-    front-index: http://10.18.69.230
+    front-index: http://10.64.3.50:8081
     cas-server-url-prefix: https://signinuat.mideazy.com
     cas-server-login-url: https://signinuat.mideazy.com/login
   ldap:
