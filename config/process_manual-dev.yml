@@ -32,3 +32,4 @@ spring:
 mybatis.mapper-locations: classpath:com/midea/dc/*.xml
 pagehelper.reasonable: true
 
+ 
